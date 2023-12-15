@@ -3,8 +3,11 @@
  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
  
- <mapper name="com.example.lesson02.mapper.UsedGoodsMapper">
- 	<select id="selectUsedGoodsList">
- 	
+ <mapper namespace="com.example.lesson02.mapper.UsedGoodsMapper">
+ 	<select id="selectUsedGoodsList" resultType="com.example.lesson02.domain.UsedGoods">
+ 	 	SELECT
+ 	 		*
+ 	 	FROM
+ 	 		`used_goods`
  	</select>
  </mapper>
