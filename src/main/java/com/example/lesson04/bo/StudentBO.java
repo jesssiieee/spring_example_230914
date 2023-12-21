@@ -16,4 +16,8 @@ public class StudentBO {
 		studentMapper.insertStudent(student);
 	}
 	
+	public void getStudentById(int id) {
+		studentMapper.selectStudentById(id);
+	}
+	
 }

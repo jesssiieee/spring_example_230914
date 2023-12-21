@@ -12,6 +12,25 @@
 	<body>
 		<div class="container">
 			<h1>방금 가입된 사용자 정보</h1>
+			
+			<table class="table table-striped">
+	 		<tr>
+	 			<th>번호</th>
+	 			<td>${student.id}</td>
+	 		</tr>
+	 		<tr>
+	 			<th>핸드폰 번호</th>
+	 			<td>${student.phoneNumber}</td>
+	 		</tr>
+	 		<tr>
+	 			<th>이메일</th>
+	 			<td>${student.email}</td>
+	 		</tr>
+	 		<tr>
+	 			<th>장래희망</th>
+	 			<td>${student.dreamJob}</td>
+	 		</tr>
+	 	</table>
 		</div>
 	</body>
 </html>
