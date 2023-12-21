@@ -16,19 +16,17 @@ public interface ReviewMapper {
 	// input : Review
 	// output : 성공한 행의 개수(int)
 	public int insertReview(Review review);
-	
+
 	public int insertReviewAsField(
-			
+
 			// 하나의 map이 된 것 => @Param
-			@Param("storeId") int storeId, 
-			@Param("menu") String menu, 
-			@Param("userName") String userName, 
-			@Param("point") Double point, 
-			@Param("review") String review
-		);
-	
-	public int updateReviewById(
-			@Param("id") int id, 
-			@Param("review") String review);
-	
+			@Param("storeId") int storeId, @Param("menu") String menu, @Param("userName") String userName,
+			@Param("point") Double point, @Param("review") String review);
+
+	public int updateReviewById(@Param("id") int id, @Param("review") String review);
+
+	// input : id
+	// output : 성공한 행의 개수
+	public int deleteReviewById(int id);
+
 }
