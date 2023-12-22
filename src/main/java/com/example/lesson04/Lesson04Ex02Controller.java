@@ -38,10 +38,10 @@ public class Lesson04Ex02Controller {
 		int id = student.getId();
 		
 		// select by id
-		studentBO.getStudentById(id);
+		Student latestStudent = studentBO.getStudentById(id);
 		
 		// Model 객체에 담는다.(jsp에서 사용하도록)
-		model.addAttribute("student", student);
+		model.addAttribute("student", latestStudent);
 		
 		// 화면 뿌리기 => 테이블
 		return "lesson04/afterAddStudent";
