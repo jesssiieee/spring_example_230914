@@ -55,4 +55,13 @@ public class Lesson07Ex02RestController {
 		
 	}
 	
+	// url : http://localhost/lesson07/ex02/2
+	@GetMapping("/2")
+	public List<StudentEntity> getstudent() {
+		
+		// dreamJob이 '개발자'인 데이터 조회
+		return studentRepository.findByDreamJob("개발자");
+		
+	}
+	
 }
